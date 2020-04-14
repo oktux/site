@@ -1,0 +1,19 @@
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+}
+
+div {
+  padding: 8pt 0 0 0
+} 
+
+#oktux-logo {
+  max-width: 750px;
+  max-height: 750px;
+  height: 100%;
+  width: 100%;
+}
