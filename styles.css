@@ -1,19 +1,25 @@
 .content {
-  max-width: 750px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* Don't stretch width */
+  align-items: center;
+  /* 95% of the viewport */
+  height: 95vh;
 }
 
-p {
+.email-section span {
+  /* Don't shrink the text responsively */
+  flex: none;
+  /* Make each span a separate line */
+  display: block;
   text-align: center;
+  margin: 0.3em;
 }
 
-div {
-  padding: 8pt 0 0 0
-} 
-
-#oktux-logo {
-  max-width: 750px;
-  max-height: 750px;
-  height: 100%;
-  width: 100%;
+#logo {
+  /* Start with the image size, shrink if needed */
+  flex: initial;
+  /* But not below 100px wide */
+  min-width: 100px;
+  margin: 0.5em;
 }
